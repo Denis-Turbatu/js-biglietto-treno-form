@@ -31,7 +31,7 @@ Il recap dei dati e l'output del prezzo finale, andranno stampati in pagina
 ### Esecuzione logica
 
 - [X] Creo un sensore di eventi e scivo il codice all'interno per il calcolo del eventuale sconto
-- [] Se (l'utente ha età >= 65){
+- [X] Se (l'utente ha età >= 65){
         calcolare sconto da applicare all'utente
         fare calcolo finale prezzo del biglietto
         stampa prezzo biglietto 
@@ -45,4 +45,4 @@ Il recap dei dati e l'output del prezzo finale, andranno stampati in pagina
 
 ### Output
 
-- [] Fuori dal eventListener, creo codice per stampa caratteristiche biglietto
+- [X] Creo codice per stampa caratteristiche biglietto
