@@ -27,13 +27,11 @@ Il recap dei dati e l'output del prezzo finale, andranno stampati in pagina
 
 - [X] Chiediamo all'utente i kilometri da percorrere
 - [X] Chiediamo all'utente l'età
-
+- [X] Imposto nelle variabili gli oggetti html
 ### Esecuzione logica
 
-- [] Imposto nelle variabili gli oggetti html
-- [] Creo un sensore di eventi e scivo il codice all'interno per il calcolo del eventuale sconto
-- [] Calcolo valore del biglietto
-- [] Se (l'utente ha età > 65){
+- [X] Creo un sensore di eventi e scivo il codice all'interno per il calcolo del eventuale sconto
+- [] Se (l'utente ha età >= 65){
         calcolare sconto da applicare all'utente
         fare calcolo finale prezzo del biglietto
         stampa prezzo biglietto 
