@@ -16,22 +16,40 @@ const sendBtn = document.getElementById("submit");
 console.log(sendBtn);
 
 // ********** Esecuzione logica **********
-sendBtn.addEventListener("click", function(){
-    //Claculation normal ticket
-    let ticket = kmValue * 0.21;
-    //Calculation discounted ticket
-    let priceDiscounted = ticket - discontApplied;
 
-    if(ageValue >= 65){
-        const discontOver65 = 40;
-        let discontApplied= (ticket * discontOver65) / 100;
-        
-    }else if(ageValue < 18){
-        const discontMinor = 20;
-        let discontApplied= (ticket * discontMinor) / 100;
+//Claculation normal ticket
+let ticket = kmValue * 0.21;
+//Calculation discounted ticket
+let discount = 0;
+console.log(discount, "discount");
+
+let discountApplied = 0;
+console.log(discountApplied, "discountApplied");
+
+let priceDiscounted = 0;
+console.log(priceDiscounted, "priceDiscounted");
+
+sendBtn.addEventListener("click", function(){
+    if (ageValue >= 65) {
+        discount = 40;
+    } else if (ageValue < 18) {
+        discount = 20;
+    }
+
+    // ********** Output **********
+    if (ageValue >= 65 || ageValue < 18) {
+        console.log(priceDiscounted);   
+        discountApplied = (ticket * discount) / 100;
+        console.log(discountApplied, "discountApplied");
+
+        priceDiscounted = ticket - discountApplied;
+        console.log(priceDiscounted, "priceDiscounted"); 
+    } else {
+        console.log(ticket);
+        discountApplied = (ticket * discount) / 100;
+        console.log(discountApplied, "discountApplied");
+
+        priceDiscounted = ticket - discountApplied;
+        console.log(priceDiscounted, "priceDiscounted");
     }
 });
-
-
-
-
