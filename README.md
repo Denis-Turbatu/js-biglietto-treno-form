@@ -25,8 +25,8 @@ Il recap dei dati e l'output del prezzo finale, andranno stampati in pagina
 
 ### Raccolta dati
 
-- [] Chiediamo all'utente i kilometri da percorrere
-- [] Chiediamo all'utente l'età
+- [X] Chiediamo all'utente i kilometri da percorrere
+- [X] Chiediamo all'utente l'età
 
 ### Esecuzione logica
 
