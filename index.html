@@ -3,13 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>BoolLine</title>
   </head>
   <body>
-    <input type="text" id="km" placeholder="Kilometri"/>
-    <input type="number" id="age" placeholder="Età"/>
+    <div class="wrapper">
+      <div class="form">
+        <h1>Biglietti</h1>
 
-    <button type="submit" id="submit">Invia</button>
+        <input type="text" id="username" placeholder="Username" />
+
+        <input type="text" id="km" placeholder="Kilometri" />
+        <input type="number" id="age" placeholder="Età" />
+
+        <button type="submit" id="submit">Invia</button>
+      </div>
+      <div class="ticket-user hidden">
+        <section>
+          <h2>Username</h2>
+          <p id="user"></p>
+        </section>
+        <div class="container-hr">
+            <div class="circle-right"></div>
+            <hr>
+            <div class="circle-left"></div>
+        </div>
+        <section>
+          <h2>Offerta</h2>
+          <p id="promo"></p>
+        </section>
+        <div class="container-hr">
+            <div class="circle-right"></div>
+            <hr>
+            <div class="circle-left"></div>
+        </div>
+        <section>
+          <h2>Dettagli</h2>
+          <p id="carriage"></p>
+          <p id="cp"></p>
+          <p id="price"></p>
+        </section>
+      </div>
+    </div>
+
+    <!-- custom js -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
