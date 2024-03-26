@@ -21,13 +21,8 @@ console.log(sendBtn);
 let ticket = kmValue * 0.21;
 //Calculation discounted ticket
 let discount = 0;
-console.log(discount, "discount");
-
 let discountApplied = 0;
-console.log(discountApplied, "discountApplied");
-
 let priceDiscounted = 0;
-console.log(priceDiscounted, "priceDiscounted");
 
 sendBtn.addEventListener("click", function(){
     if (ageValue >= 65) {
@@ -37,19 +32,18 @@ sendBtn.addEventListener("click", function(){
     }
 
     // ********** Output **********
-    if (ageValue >= 65 || ageValue < 18) {
-        console.log(priceDiscounted);   
+    if (ageValue >= 65 || ageValue < 18) {  
+        //Reducted price
         discountApplied = (ticket * discount) / 100;
-        console.log(discountApplied, "discountApplied");
-
+        console.log("Lo sconto applicato del " + discount + "% è di: " + discountApplied + "€");
+        // Final price
         priceDiscounted = ticket - discountApplied;
-        console.log(priceDiscounted, "priceDiscounted"); 
+        console.log("Il prezzo finale è di: " + (priceDiscounted).toFixed(2) + "€"); 
     } else {
-        console.log(ticket);
-        discountApplied = (ticket * discount) / 100;
-        console.log(discountApplied, "discountApplied");
-
+        // Reducted price
+        console.log("Ci dispiace! Ma non hai uno sconto disponibile");
+        // Final price
         priceDiscounted = ticket - discountApplied;
-        console.log(priceDiscounted, "priceDiscounted");
+        console.log("Il prezzo finale è di: " + (ticket).toFixed(2) + "€");
     }
 });
